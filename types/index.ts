@@ -7,3 +7,8 @@ export interface Theme {
 		text: string;
 	};
 }
+
+export enum Modes {
+	LIGHT,
+	DARK,
+}

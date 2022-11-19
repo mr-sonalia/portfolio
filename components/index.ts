@@ -1,2 +1,2 @@
-export * from "../Layouts";
+export * from "../layouts";
 export * from "./Navbar";
