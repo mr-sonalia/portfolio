@@ -1,6 +1,6 @@
 export const introduction = [
 	{
-		text: "A fresher software developer with experiences in web development.",
+		text: "Hi! I am fresher software developer with experiences in web development.",
 		key: 1,
 	},
 	{

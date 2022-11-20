@@ -15,19 +15,19 @@ export const heroSectionUrls: {
 	{
 		key: 1,
 		name: "GitHub",
-		url: "#",
+		url: "https://github.com/mr-sonalia",
 		icon: GitHubIcon,
 	},
 	{
 		key: 2,
 		name: "StackOverflow",
-		url: "#",
+		url: "https://stackoverflow.com/users/14563463/yash-sonalia",
 		icon: StackOverflowIcon,
 	},
 	{
 		key: 3,
 		name: "Resume",
-		url: "#",
+		url: "https://docs.google.com/document/d/1EyJmEWw7su__hOfFPG7cJCyl7ALw6e4U_DiBiItQWLg/edit?usp=sharing",
 		icon: ResumeIcon,
 	},
 ];
