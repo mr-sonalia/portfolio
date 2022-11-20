@@ -8,6 +8,7 @@ declare module "styled-components" {
 			gray: string;
 			purpleLight: string;
 			purpleDark: string;
+			purpleSelection: string;
 			background: string;
 			text: string;
 		};

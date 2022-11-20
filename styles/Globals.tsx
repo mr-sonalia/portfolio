@@ -22,6 +22,12 @@ const GlobalStyle = createGlobalStyle<{ theme: DefaultTheme }>`
         color: ${props => props.theme.color.text};
     
         font-family: "Urbanist", sans-serif, serif;
+        
+    }
+
+    ::selection {
+        background-color: ${({ theme }) => theme.color.purpleSelection};
+        background-blend-mode: difference;
     }
 `;
 

@@ -8,6 +8,7 @@ export const darkTheme: DefaultTheme = {
 		purpleDark: "#5632A7",
 		background: "#0F0F12",
 		text: "#FFF",
+		purpleSelection: "#805AD54F",
 	},
 };
 
@@ -18,5 +19,6 @@ export const lightTheme: DefaultTheme = {
 		purpleDark: "#5632A7",
 		background: "#FFF",
 		text: "#0F0F12",
+		purpleSelection: "#805AD54F",
 	},
 };
