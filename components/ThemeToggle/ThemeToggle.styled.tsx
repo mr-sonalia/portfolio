@@ -15,4 +15,8 @@ export const ToggleButton = styled.button`
 	background: transparent;
 
 	cursor: pointer;
+
+	position: fixed;
+	left: 4rem;
+	bottom: 4rem;
 `;

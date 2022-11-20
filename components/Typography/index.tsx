@@ -74,6 +74,12 @@ export const NavText = styled.p`
 	line-height: 1.9rem;
 `;
 
-export const NavTextMuted = styled(NavText)`
+interface INavTextMuted {
+	alignment?: "right" | "left" | "center";
+	cursor?: "pointer" | "normal";
+}
+export const NavTextMuted = styled(NavText)<INavTextMuted>`
 	color: ${({ theme }) => theme.color.gray};
+	text-align: ${props => props.alignment || "left"};
+	cursor: ${props => props.cursor || "normal"};
 `;

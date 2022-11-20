@@ -1,24 +1,17 @@
+import Link from "@/components/Link";
 import ThemeToggle from "@/components/ThemeToggle/ThemeToggle";
 import useTheme from "@/hooks/useTheme";
 import Navbar from "components/Navbar";
+import { GradientAccent, Heading, Introduction } from "components/Typography";
+import { ScrollIcon } from "icons";
 import {
-	GradientAccent,
-	Heading,
-	Introduction,
-	RoleAndCompany,
-	RoleDescription,
-	RoleDuration,
-	SectionHeading,
-} from "components/Typography";
-import {
-	DarkThemeIcon,
-	GitHubIcon,
-	LightThemeIcon,
-	LinkedInIcon,
-	StackOverflowIcon,
-	URLIcon,
-} from "icons";
-import { IntroductionSection, Main } from "layouts";
+	HeroLinksSection,
+	HeroSection,
+	IntroductionSection,
+	Main,
+	ScrollIconContainer,
+} from "layouts";
+import { heroSectionUrls } from "meta";
 import { introduction } from "meta/introduction";
 import { ThemeProvider } from "styled-components";
 import GlobalStyle from "styles/Globals";
@@ -30,18 +23,36 @@ export default function Home() {
 		<ThemeProvider theme={theme}>
 			<GlobalStyle />
 			<Navbar />
+			<ThemeToggle mode={mode} setTheme={setTheme} />
 			<Main>
-				<ThemeToggle mode={mode} setTheme={setTheme} />
-				<Heading>
-					<GradientAccent>Full-Stack</GradientAccent> Web Developer & Designer
-					<GradientAccent>.</GradientAccent>
-				</Heading>
-				<IntroductionSection>
-					{introduction.map(data => (
-						<Introduction key={data.key}>{data.text}</Introduction>
-					))}
-				</IntroductionSection>
-				<SectionHeading>Work Experience</SectionHeading>
+				<HeroSection>
+					<Heading>
+						<GradientAccent>Full-Stack</GradientAccent> Web Developer & Designer
+						<GradientAccent>.</GradientAccent>
+					</Heading>
+
+					<IntroductionSection>
+						{introduction.map(data => (
+							<Introduction key={data.key}>{data.text}</Introduction>
+						))}
+					</IntroductionSection>
+
+					<HeroLinksSection>
+						{heroSectionUrls.map(item => (
+							<Link
+								key={item.key}
+								icon={<item.icon />}
+								href={item.url}
+								text={item.name}
+							/>
+						))}
+					</HeroLinksSection>
+
+					<ScrollIconContainer>
+						<ScrollIcon />
+					</ScrollIconContainer>
+				</HeroSection>
+				{/* <SectionHeading>Work Experience</SectionHeading>
 				<RoleAndCompany>Frontend Software Developer at Neos HealthTech</RoleAndCompany>
 				<RoleDuration>Aug 2022 - Present</RoleDuration>
 				<RoleDescription>
@@ -55,7 +66,7 @@ export default function Home() {
 				<StackOverflowIcon />
 				<URLIcon />
 				<LightThemeIcon />
-				<DarkThemeIcon />
+				<DarkThemeIcon /> */}
 			</Main>
 		</ThemeProvider>
 	);

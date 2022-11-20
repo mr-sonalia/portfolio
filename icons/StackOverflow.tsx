@@ -1,6 +1,4 @@
-type Props = {};
-
-const StackOverflowIcon = (props: Props) => {
+const StackOverflowIcon = () => {
 	return (
 		<svg
 			width="16"
