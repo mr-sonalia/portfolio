@@ -10,7 +10,7 @@ type Props = {
 
 const L: FC<Props> = props => {
 	return (
-		<Link href={props.href} style={{ textDecoration: "none" }}>
+		<Link href={props.href} style={{ textDecoration: "none" }} target="_blank">
 			<LinkContainer>
 				{props.icon}
 				<LinkText>{props.text}</LinkText>
