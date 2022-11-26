@@ -1,5 +1,4 @@
-import { Card, SectionHeading } from "components";
-import { ExperienceSection } from "layouts";
+import { Card, ExperienceSection, SectionHeading } from "components";
 import { experiences } from "meta";
 
 type Props = {};

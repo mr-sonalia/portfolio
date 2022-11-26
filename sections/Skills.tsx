@@ -1,5 +1,10 @@
-import { SectionHeading } from "components";
-import { SkillChip, SkillChipContainer, SkillsContainer, SkillSection } from "layouts";
+import {
+	SectionHeading,
+	SkillChip,
+	SkillChipContainer,
+	SkillsContainer,
+	SkillSection,
+} from "components";
 import { skills } from "meta";
 
 const Skills = () => {

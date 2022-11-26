@@ -1,6 +1,14 @@
-import { GradientAccent, Heading, Introduction, Link } from "components";
+import {
+	GradientAccent,
+	Heading,
+	HeroLinksSection,
+	HeroSection,
+	Introduction,
+	IntroductionSection,
+	Link,
+	ScrollIconContainer,
+} from "components";
 import { ScrollIcon } from "icons";
-import { HeroLinksSection, HeroSection, IntroductionSection, ScrollIconContainer } from "layouts";
 import { heroSectionUrls, introduction } from "meta";
 
 type Props = {};
