@@ -1,6 +1,6 @@
 import { Navbar, ThemeToggle } from "components";
-import { useTheme } from "hooks";
-import { Main } from "layouts";
+import { useTheme } from "../hooks";
+import { Main } from "../layouts";
 import { Experiences, Hero, Projects, Skills } from "sections";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "../styles";

@@ -42,14 +42,14 @@ export const SectionHeading = styled.h2`
 	color: ${({ theme }) => theme.color.gray};
 `;
 
-export const RoleAndCompany = styled.h3`
+export const CardTitle = styled.h3`
 	font-style: normal;
 	font-weight: 500;
 	font-size: 2rem;
 	line-height: 2.6rem;
 `;
 
-export const RoleDuration = styled.h4`
+export const CardSub = styled.h4`
 	font-style: normal;
 	font-weight: 400;
 	font-size: 1.6rem;
@@ -58,7 +58,7 @@ export const RoleDuration = styled.h4`
 	color: ${({ theme }) => theme.color.gray};
 `;
 
-export const RoleDescription = styled.p`
+export const CardDescription = styled.p`
 	font-style: normal;
 	font-weight: 300;
 	font-size: 1.6rem;
