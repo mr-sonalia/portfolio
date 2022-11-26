@@ -11,7 +11,7 @@ interface ThemeToggleProps {
 const ThemeToggle: FC<ThemeToggleProps> = ({ mode, setTheme }) => {
 	return (
 		<ToggleButton onClick={setTheme}>
-			{mode === Modes.DARK ? <DarkThemeIcon /> : <LightThemeIcon />}
+			{mode === Modes.LIGHT ? <LightThemeIcon /> : <DarkThemeIcon />}
 		</ToggleButton>
 	);
 };

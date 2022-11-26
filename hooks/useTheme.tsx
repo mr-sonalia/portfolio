@@ -7,7 +7,7 @@ type UseThemeReturnValues = [DefaultTheme, Modes, () => void, () => DefaultTheme
 
 const useTheme = (): UseThemeReturnValues => {
 	const [mode, setMode] = useState<Modes>(Modes.LIGHT);
-	const [theme, setTheme] = useState<DefaultTheme>(darkTheme);
+	const [theme, setTheme] = useState<DefaultTheme>(lightTheme);
 
 	const changeTheme = () => {
 		setMode(prev => {
