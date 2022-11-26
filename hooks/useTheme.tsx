@@ -6,8 +6,8 @@ import { darkTheme, lightTheme } from "../styles";
 type UseThemeReturnValues = [DefaultTheme, Modes, () => void, () => DefaultTheme];
 
 const useTheme = (): UseThemeReturnValues => {
-	const [mode, setMode] = useState<Modes>(Modes.LIGHT);
-	const [theme, setTheme] = useState<DefaultTheme>(lightTheme);
+	const [mode, setMode] = useState<Modes>(Modes.DARK);
+	const [theme, setTheme] = useState<DefaultTheme>(darkTheme);
 
 	const changeTheme = () => {
 		setMode(prev => {
