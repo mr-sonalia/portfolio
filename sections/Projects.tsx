@@ -1,7 +1,23 @@
+import { Card, ExperienceSection, SectionHeading } from "components";
+import { experiences } from "meta";
+
 type Props = {};
 
 const Projects = (props: Props) => {
-	return <div>Projects</div>;
+	return (
+		<ExperienceSection>
+			<SectionHeading>Projects</SectionHeading>
+			{experiences.map(exp => (
+				<Card
+					key={exp.id}
+					title={exp.roleAndCompany}
+					sub={exp.duration}
+					description={exp.description}
+					logo={exp.companyLogo}
+				/>
+			))}
+		</ExperienceSection>
+	);
 };
 
 export default Projects;

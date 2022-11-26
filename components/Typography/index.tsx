@@ -58,13 +58,23 @@ export const CardSub = styled.h4`
 	color: ${({ theme }) => theme.color.gray};
 `;
 
-export const CardDescription = styled.p`
+export const CardDescriptionList = styled.ul`
+	/* list-style-type: "∙"; */
+`;
+
+export const CardDescriptionItem = styled.li`
 	font-style: normal;
 	font-weight: 300;
 	font-size: 1.6rem;
 	line-height: 2.4rem;
 
 	color: ${({ theme }) => theme.color.gray};
+
+	margin-bottom: 0.6rem;
+
+	/* ::marker {
+		color: ${({ theme }) => theme.color.purpleLight};
+	} */
 `;
 
 export const NavText = styled.p`

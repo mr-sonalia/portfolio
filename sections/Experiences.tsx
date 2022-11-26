@@ -13,6 +13,7 @@ const Experiences = (props: Props) => {
 					title={exp.roleAndCompany}
 					sub={exp.duration}
 					description={exp.description}
+					logo={exp.companyLogo}
 				/>
 			))}
 		</ExperienceSection>

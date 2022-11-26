@@ -27,6 +27,9 @@ export const CompanyIcon = styled.div`
 	width: 4rem;
 	height: 4rem;
 
-	background: ${({ theme }) => theme.color.purpleLight};
+	/* background: ${({ theme }) => theme.color.purpleLight}; */
 	border-radius: 50%;
+
+	display: grid;
+	place-items: center;
 `;

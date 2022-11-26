@@ -8,6 +8,9 @@ const nextConfig = {
 			displayName: true,
 		},
 	},
+	images: {
+		domains: ["www.neoshealthtech.com"],
+	},
 };
 
 module.exports = nextConfig;

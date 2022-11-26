@@ -27,6 +27,7 @@ const GlobalStyle = createGlobalStyle<{ theme: DefaultTheme }>`
 
     ::selection {
         background-color: ${({ theme }) => theme.color.purpleSelection};
+        color: ${props => props.theme.color.text};
         background-blend-mode: difference;
     }
 

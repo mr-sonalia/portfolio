@@ -1,4 +1,5 @@
-import { CardDescription, CardSub, CardTitle } from "components/Typography";
+import { CardDescriptionItem, CardDescriptionList, CardSub, CardTitle } from "components";
+import Image from "next/image";
 import { FC } from "react";
 import {
 	CardBody,
@@ -12,7 +13,8 @@ import {
 type CardProps = {
 	title: string;
 	sub: string;
-	description: string;
+	description: string[];
+	logo: string;
 	urls?: {
 		url: string;
 		icon: () => JSX.Element;
@@ -23,7 +25,9 @@ const Card: FC<CardProps> = props => {
 	return (
 		<CardContainer>
 			<CardLeftSection>
-				<CompanyIcon />
+				<CompanyIcon>
+					<Image src={props.logo} alt="Company Icon" width="34" height="34" />
+				</CompanyIcon>
 			</CardLeftSection>
 			<CardRightSection>
 				<CardHeader>
@@ -32,7 +36,11 @@ const Card: FC<CardProps> = props => {
 					{/* {props.urls && props} */}
 				</CardHeader>
 				<CardBody>
-					<CardDescription>{props.description}</CardDescription>
+					<CardDescriptionList>
+						{props.description.map((desc, i) => (
+							<CardDescriptionItem key={i}>{desc}</CardDescriptionItem>
+						))}
+					</CardDescriptionList>
 				</CardBody>
 			</CardRightSection>
 		</CardContainer>

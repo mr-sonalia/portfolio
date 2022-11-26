@@ -13,6 +13,7 @@ const Nav = styled.nav`
 	position: fixed;
 	left: 50%;
 	top: 0;
+	z-index: 999;
 
 	transform: translateX(-50%);
 
