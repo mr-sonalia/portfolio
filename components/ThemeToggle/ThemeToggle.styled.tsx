@@ -19,4 +19,9 @@ export const ToggleButton = styled.button`
 	position: fixed;
 	left: 4rem;
 	bottom: 4rem;
+
+	transition: background 0.1s ease-out;
+	:hover {
+		background: ${props => props.theme.color.purpleHover};
+	}
 `;

@@ -1,7 +1,7 @@
-import { darkTheme, lightTheme } from "@/styles/Theme";
 import { useState } from "react";
 import { DefaultTheme } from "styled-components";
 import { Modes } from "types";
+import { darkTheme, lightTheme } from "../styles";
 
 type UseThemeReturnValues = [DefaultTheme, Modes, () => void, () => DefaultTheme];
 

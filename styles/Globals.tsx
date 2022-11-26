@@ -29,6 +29,24 @@ const GlobalStyle = createGlobalStyle<{ theme: DefaultTheme }>`
         background-color: ${({ theme }) => theme.color.purpleSelection};
         background-blend-mode: difference;
     }
+
+    ::-webkit-scrollbar {
+	width: 1vw;
+	min-width: 2px;
+	max-width: 10px;
+}
+
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: ${({ theme }) => theme.color.purpleSelection};
+        &:hover {
+            background: ${({ theme }) => theme.color.purpleLight};
+        }
+    }
+
 `;
 
 export default GlobalStyle;

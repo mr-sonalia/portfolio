@@ -18,20 +18,6 @@
         "isolatedModules": true,
         "jsx": "preserve",
         "incremental": true,
-        "paths": {
-            "@/utils/*": [
-                "./utils/*"
-            ],
-            "@/components/*": [
-                "./components/*"
-            ],
-            "@/hooks/*": [
-                "./hooks/*"
-            ],
-            "@/styles/*": [
-                "./styles/*"
-            ],
-        },
         "baseUrl": "./"
     },
     "include": [

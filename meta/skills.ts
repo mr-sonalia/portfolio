@@ -1,0 +1,16 @@
+export const skills = [
+	{ id: 1, skill: "Typescript" },
+	{ id: 2, skill: "Next.js" },
+	{ id: 3, skill: "Node.js" },
+	{ id: 4, skill: "Redux Toolkit" },
+	{ id: 5, skill: "Cypress" },
+	{ id: 6, skill: "Jest" },
+	{ id: 7, skill: "Git" },
+	{ id: 8, skill: "Github/Bitbucket" },
+	{ id: 9, skill: "CI/CD" },
+	{ id: 10, skill: "Docker" },
+	{ id: 11, skill: "Jira" },
+	{ id: 12, skill: "Software Design Patterns" },
+	{ id: 13, skill: "Object-Oriented Programming" },
+	{ id: 14, skill: "Data Structures" },
+];

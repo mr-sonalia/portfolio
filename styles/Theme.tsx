@@ -3,22 +3,24 @@ import { DefaultTheme } from "styled-components";
 
 export const darkTheme: DefaultTheme = {
 	color: {
-		gray: "#9F9FA0",
-		purpleLight: "#805AD5",
-		purpleDark: "#5632A7",
-		background: "#0F0F12",
-		text: "#FFF",
-		purpleSelection: "#805AD54F",
+		gray: "hsl(240, 0.5235602094240819%, 62.549019607843135%)",
+		purpleLight: "hsl(258.5365853658536, 59.42028985507248%, 59.411764705882355%)",
+		purpleDark: "hsl(258.46153846153845, 53.91705069124425%, 42.549019607843135%)",
+		background: "hsl(240, 9.090909090909092%, 6.470588235294117%)",
+		text: "hsl(0, 0%, 100%)",
+		purpleSelection: "hsla(258.5365853658536, 59.42028985507248%, 59.411764705882355%, 0.31)",
+		purpleHover: "hsla(258.5365853658536, 59.42028985507248%, 59.411764705882355%, 0.2)",
 	},
 };
 
 export const lightTheme: DefaultTheme = {
 	color: {
-		gray: "#9F9FA0",
-		purpleLight: "#805AD5",
-		purpleDark: "#5632A7",
-		background: "#FFF",
-		text: "#0F0F12",
-		purpleSelection: "#805AD54F",
+		gray: "hsl(240, 0.5235602094240819%, 62.549019607843135%)",
+		purpleLight: "hsl(258.5365853658536, 59.42028985507248%, 59.411764705882355%)",
+		purpleDark: "hsl(258.46153846153845, 53.91705069124425%, 42.549019607843135%)",
+		background: "hsl(0, 0%, 100%)",
+		text: "hsl(240, 9.090909090909092%, 6.470588235294117%)",
+		purpleSelection: "hsla(258.5365853658536, 59.42028985507248%, 59.411764705882355%, 0.31)",
+		purpleHover: "hsla(258.5365853658536, 59.42028985507248%, 59.411764705882355%, 0.2)",
 	},
 };
