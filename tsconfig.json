@@ -23,7 +23,14 @@
     "include": [
         "next-env.d.ts",
         "**/*.ts",
-        "**/*.tsx"
+        "**/*.tsx",
+        "components",
+        "hooks",
+        "layouts",
+        "sections",
+        "meta",
+        "styles",
+        "types",
     ],
     "exclude": [
         "node_modules"
