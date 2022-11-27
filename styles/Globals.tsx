@@ -2,8 +2,8 @@ import { createGlobalStyle, DefaultTheme } from "styled-components";
 
 const GlobalStyle = createGlobalStyle<{ theme: DefaultTheme }>`
     *, *::before, *::after {
-        margin: 0px;
-        padding: 0px;
+        margin: 0rem;
+        padding: 0rem;
 
         box-sizing: border-box;
         font-size: 62.5%;
@@ -33,8 +33,8 @@ const GlobalStyle = createGlobalStyle<{ theme: DefaultTheme }>`
 
     ::-webkit-scrollbar {
 	width: 1vw;
-	min-width: 2px;
-	max-width: 10px;
+	min-width: 0.2rem;
+	max-width: 1rem;
 }
 
     ::-webkit-scrollbar-track {

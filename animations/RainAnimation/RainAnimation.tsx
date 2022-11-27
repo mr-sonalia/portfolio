@@ -16,9 +16,15 @@ const rain = keyframes`
 
 export const AnimationContainer = styled.div`
 	position: fixed;
+	/* position: absolute; */
 	z-index: -1;
 	top: 0;
 	left: 0;
+
+	pointer-events: none;
+	user-select: none;
+
+	overflow-y: hidden;
 
 	width: 100%;
 	height: 100%;
@@ -28,7 +34,7 @@ export const AnimationContainer = styled.div`
 `;
 
 export const AnimationItem = styled.div<{ delay: number }>`
-	width: 1px;
+	width: 0.1rem;
 	height: 100%;
 	background-color: ${({ theme }) => theme.color.gray};
 	opacity: 0.15;

@@ -22,7 +22,7 @@ const Section = styled.div`
 
 export const HeroSection = styled.div`
 	padding-top: 20rem;
-	height: 100vh;
+	min-height: 100vh;
 `;
 
 export const IntroductionSection = styled.div`
@@ -57,6 +57,8 @@ export const SkillsContainer = styled.div`
 	flex-wrap: wrap;
 	width: 100%;
 	gap: 1rem;
+
+	padding-left: 1rem;
 `;
 
 export const SkillChipContainer = styled.span`
@@ -66,8 +68,11 @@ export const SkillChipContainer = styled.span`
 	padding: 1.6rem;
 	gap: 1.4rem;
 
-	border: 1px solid ${props => props.theme.color.purpleSelection};
+	border: 0.1rem solid ${props => props.theme.color.purpleSelection};
 	border-radius: 3rem;
+
+	background: ${props => props.theme.color.background};
+	backdrop-filter: blur(0.3rem);
 
 	transition: background 0.1s ease-out;
 	:hover {

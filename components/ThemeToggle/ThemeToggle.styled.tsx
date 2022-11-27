@@ -9,7 +9,7 @@ export const ToggleButton = styled.button`
 	width: 4rem;
 	height: 4rem;
 
-	border: 1px solid ${({ theme }) => theme.color.gray};
+	border: 0.1rem solid ${({ theme }) => theme.color.gray};
 	border-radius: 2rem;
 
 	background: transparent;

@@ -7,12 +7,12 @@ export const experiences: {
 }[] = [
 	{
 		id: 0,
-		roleAndCompany: "Frontend SWD at Neos HealthTech",
+		roleAndCompany: "Front-End SWD at Neos HealthTech",
 		duration: "Aug 2022 - Present",
 		description: [
 			"Assisting in the ideation and planning of frontend software architecture and design patterns for multiple projects.",
 			"Collaborating with the backend team to efficiently document project APIs, endpoints, and responses to ensure network requests work seamlessly.",
-			"Leading a team of co-interns in developing a full-stack Next.js and Node.js/Express microservices project.",
+			"Lead a team of co-interns in developing a full-stack Next.js and Node.js/Express microservices project.",
 		],
 		companyLogo: "/neos-logo.png",
 	},
@@ -30,7 +30,7 @@ export const experiences: {
 	},
 	{
 		id: 2,
-		roleAndCompany: "Frontend Developer Intern at Excellis IT",
+		roleAndCompany: "Front-End Developer Intern at Excellis IT",
 		duration: "Mar 2021 - May 2021",
 		description: [
 			"Developed alongside core developers’ team, building static, responsive, and scalable frontend for websites.",

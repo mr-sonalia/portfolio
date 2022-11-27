@@ -8,7 +8,7 @@ export const introduction = [
 		key: 2,
 	},
 	{
-		text: "I am looking for opportunities to use my skills and knowledge to contribute to the success of your organization.",
+		text: "I am looking for opportunities to use my skills and knowledge to contribute to the success of your organization!",
 		key: 3,
 	},
 ];

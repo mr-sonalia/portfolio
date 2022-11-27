@@ -5,12 +5,10 @@ const nextConfig = {
 	compiler: {
 		styledComponents: {
 			ssr: true,
-			displayName: true,
+			displayName: false,
 		},
 	},
-	images: {
-		domains: ["www.neoshealthtech.com"],
-	},
+	images: {},
 };
 
 module.exports = nextConfig;

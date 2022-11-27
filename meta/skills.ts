@@ -10,7 +10,9 @@ export const skills = [
 	{ id: 9, skill: "CI/CD" },
 	{ id: 10, skill: "Docker" },
 	{ id: 11, skill: "Jira" },
-	{ id: 12, skill: "Software Design Patterns" },
-	{ id: 13, skill: "Object-Oriented Programming" },
-	{ id: 14, skill: "Data Structures" },
+	{ id: 12, skill: "C++" },
+	{ id: 13, skill: "Java" },
+	{ id: 14, skill: "Software Design Patterns" },
+	{ id: 15, skill: "Object-Oriented Programming" },
+	{ id: 16, skill: "Data Structures" },
 ];
