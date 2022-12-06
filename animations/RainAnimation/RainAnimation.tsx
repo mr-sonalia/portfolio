@@ -15,7 +15,7 @@ const rain = keyframes`
 `;
 
 export const AnimationContainer = styled.div`
-	position: fixed;
+	position: absolute;
 	/* position: absolute; */
 	z-index: -1;
 	top: 0;

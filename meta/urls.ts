@@ -26,7 +26,7 @@ export const heroSectionUrls: {
 	},
 	{
 		key: 3,
-		name: "Resume",
+		name: "My Resume",
 		url: "https://docs.google.com/document/d/1EyJmEWw7su__hOfFPG7cJCyl7ALw6e4U_DiBiItQWLg/edit?usp=sharing",
 		icon: ResumeIcon,
 	},

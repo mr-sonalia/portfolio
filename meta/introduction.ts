@@ -1,14 +1,14 @@
 export const introduction = [
 	{
-		text: "Hi! I am fresher software developer with experiences in web development.",
+		text: "Hi! I am a rookie software developer and designer with a CS Major.",
 		key: 1,
 	},
 	{
-		text: "I have developed a strong foundation in computer science and software engineering concepts. I am confident in my abilities to build high-quality software solutions and I have a strong desire to learn new technologies.",
+		text: "I have developed a strong foundation in computer science and software engineering concepts. I am passionate about building software, especially web applications and I have a strong desire to learn new tech.",
 		key: 2,
 	},
 	{
-		text: "I am looking for opportunities to use my skills and knowledge to contribute to the success of your organization!",
+		text: "Being a nerd, I can be found binging through TV shows and movies or scrolling through instagram.",
 		key: 3,
 	},
 ];
