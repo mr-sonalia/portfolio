@@ -1,0 +1,5 @@
+# Next build and cache directory
+.next
+
+# Lockfiles
+package.lock.json
