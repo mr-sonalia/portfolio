@@ -39,21 +39,21 @@ const WorkExperience = () => {
 		{
 			title: "Frontend Developer (Intern)",
 			company: "Credence Analytics",
-			date: "2021 - Present",
+			date: "Oct 2021 - Feb 2022",
 			description:
 				"Enhanced page-load performance and maintainability with latest ES standards; refactored class-based React to functional components for better readability. Implemented React micro-frontends.",
 		},
 		{
 			title: "Frontend Developer (Intern)",
 			company: "Excellis IT",
-			date: "2021 - Present",
+			date: "Mar 2021 - May 2021",
 			description:
 				"Crafted static, responsive, and scalable front-end for websites. Aided in HTML rendering optimization by minimizing jQuery reliance and accelerating development with SCSS.",
 		},
 	];
 
 	return (
-		<section className="container w-full" id="work-experience">
+		<section className="container w-full pt-24" id="work-experience">
 			<div className="mb-10">
 				<h1 className="text-3xl font-bold text-gray-200 uppercase md:text-4xl lg:text-6xl text-left">
 					{titlePart1.split("").map((char, idx) => (

@@ -7,7 +7,7 @@ export default function Home() {
 			<div className="section-content h-[100vh] flex justify-center items-center flex-col relative">
 				<Title />
 				<Introduction />
-				<div className="hidden absolute top-[80vh] md:block">
+				<div className="hidden absolute top-[80vh] right-[50%] translate-x-[-50%] xl:block">
 					<a href="#work-experience">
 						<svg
 							width="26"

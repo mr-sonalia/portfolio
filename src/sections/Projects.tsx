@@ -56,7 +56,7 @@ const Projects = () => {
 	];
 
 	return (
-		<section className="mt-20 md:mt-40 container w-full" id="projects">
+		<section className="mt-20 md:mt-40 container w-full pt-24" id="projects">
 			<div className="mb-10">
 				<h1 className="text-3xl font-bold text-gray-200 uppercase md:text-4xl lg:text-6xl text-left">
 					{title.split("").map((char, idx) => (
