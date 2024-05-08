@@ -16,6 +16,33 @@ const Title = () => {
 					</span>
 				))}
 			</h1>
+			<div id="socials" className="mb-8 md:mb-14 lg:mb-20">
+				<div>
+					<a
+						href="https://docs.google.com/document/d/1tlF579BJ-1orBawwig7kHkgoyvqzgvFix_B0W1duP8Q/edit?usp=sharing"
+						className="text-sm text-gray-600 hover:text-accent-500 ease-linear duration-50 font-semibold">
+						Resume
+					</a>
+					<span className="text-sm text-accent-500 select-none"> • </span>
+					<a
+						href="https://www.linkedin.com/in/yash-sonalia"
+						className="text-sm text-gray-600 hover:text-accent-500 ease-linear duration-50 font-semibold">
+						Linkedin
+					</a>
+					<span className="text-sm text-accent-500 select-none"> • </span>
+					<a
+						href="https://github.com/mr-sonalia"
+						className="text-sm text-gray-600 hover:text-accent-500 ease-linear duration-50 font-semibold">
+						Github
+					</a>
+					<span className="text-sm text-accent-500 select-none"> • </span>
+					<a
+						href="https://www.instagram.com/sonaliayash/"
+						className="text-sm text-gray-600 hover:text-accent-500 ease-linear duration-50 font-semibold">
+						Instagram
+					</a>
+				</div>
+			</div>
 		</section>
 	);
 };
