@@ -1,0 +1,75 @@
+type ProjectProps = {
+	title: string;
+	description: string;
+	uri: string;
+};
+
+const Project = ({ uri, title, description }: ProjectProps) => {
+	const redirectionURL = `https://github.com/${uri}`;
+	const ogImageURL = `https://opengraph.githubassets.com/0101/${uri}`;
+	return (
+		<a href={redirectionURL}>
+			<div className="flex items-start justify-start w-full p-4 bg-gray-50 rounded-lg border-solid border border-gray-200">
+				<div
+					className="w-full h-48 md:max-w-[200px] bg-origin-content md:h-24 bg-cover bg-center bg-no-repeat"
+					style={{ backgroundImage: `url(${ogImageURL})` }}></div>
+				<div className="flex flex-col ml-4">
+					<h2 className="text-xl font-semibold text-gray-700">{title}</h2>
+					<p className="text-sm max-w-lg mt-1 mb-3 text-gray-800">{description}</p>
+				</div>
+			</div>
+		</a>
+	);
+};
+
+const Projects = () => {
+	const title = "Projects";
+
+	const projects = [
+		{
+			title: "Software Engineer",
+			description: "Working on the next big thing! some more text to make it multiline",
+			uri: "mr-sonalia/AI-CT-Segmentation",
+		},
+		{
+			title: "Software Engineer",
+			description: "Working on the next big thing some more text to make it multiline!",
+			uri: "mr-sonalia/AI-CT-Segmentation",
+		},
+		{
+			title: "Software Engineer",
+			description: "Working on the next big thing! some more text to make it multiline",
+			uri: "mr-sonalia/AI-CT-Segmentation",
+		},
+		{
+			title: "Software Engineer",
+			description: "Working on the next big thing!",
+			uri: "mr-sonalia/AI-CT-Segmentation",
+		},
+	];
+
+	return (
+		<section className="mt-20 md:mt-40 container w-full" id="projects">
+			<div className="mb-10">
+				<h1 className="text-3xl font-bold text-gray-200 uppercase md:text-4xl lg:text-6xl text-left">
+					{title.split("").map((char, idx) => (
+						<span key={idx} className="hover:text-accent-500 ease-linear duration-50">
+							{char}
+						</span>
+					))}
+				</h1>
+				<p className="text-sm max-w-lg mb-3 text-gray-800 leading-6">
+					Some that I am proud of! 🔥
+				</p>
+			</div>
+
+			<div className="grid my-6 gap-2 md:gap-4">
+				{projects.map((project, idx) => (
+					<Project key={idx} {...project} />
+				))}
+			</div>
+		</section>
+	);
+};
+
+export { Projects };
