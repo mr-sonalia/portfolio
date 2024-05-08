@@ -9,12 +9,16 @@ const Project = ({ uri, title, description }: ProjectProps) => {
 	const ogImageURL = `https://opengraph.githubassets.com/0101/${uri}`;
 	return (
 		<a href={redirectionURL}>
-			<div className="flex items-start justify-start w-full p-4 bg-gray-50 rounded-lg border-solid border border-gray-200">
+			<div className="flex items-start flex-col md:flex-row justify-start w-full p-4 bg-gray-50 rounded-lg border-solid border border-gray-200">
 				<div
-					className="w-full h-48 md:max-w-[200px] bg-origin-content md:h-24 bg-cover bg-center bg-no-repeat"
-					style={{ backgroundImage: `url(${ogImageURL})` }}></div>
-				<div className="flex flex-col ml-4">
-					<h2 className="text-xl font-semibold text-gray-700">{title}</h2>
+					className="w-full h-48 md:max-w-[200px] md:h-24 bg-cover bg-center bg-no-repeat"
+					style={{
+						backgroundImage: `url(${ogImageURL})`,
+						backgroundSize: "contain",
+						backgroundPosition: "top center",
+					}}></div>
+				<div className="flex flex-col mt-2 md:mt-0 md:ml-4">
+					<h2 className="text-lg md:text-xl font-semibold text-gray-700">{title}</h2>
 					<p className="text-sm max-w-lg mt-1 mb-3 text-gray-800">{description}</p>
 				</div>
 			</div>
@@ -73,3 +77,4 @@ const Projects = () => {
 };
 
 export { Projects };
+
