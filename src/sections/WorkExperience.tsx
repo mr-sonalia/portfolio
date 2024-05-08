@@ -22,28 +22,33 @@ const WorkExperience = () => {
 
 	const workExperience = [
 		{
-			title: "Software Engineer",
-			company: "Google",
-			date: "2021 - Present",
-			description: "Working on the next big thing! some more text to make it multiline",
+			title: "Full-stack SDE",
+			company: "Neos Healthtech Pvt. Ltd.",
+
+			date: "Nov 2022 - Present",
+			description:
+				"Enhanced inter-service communication efficiency by 90% through REST to async queues migration, reduced development time with pnpm workspaces monorepo, optimized server load with Node microservices, and collaborated for AI integration.",
 		},
 		{
-			title: "Software Engineer",
-			company: "Google",
-			date: "2021 - Present",
-			description: "Working on the next big thing some more text to make it multiline!",
+			title: "Frontend SDE",
+			company: "Neos Healthtech Pvt. Ltd.",
+			date: "Aug 2022 - Nov 2022",
+			description:
+				"Accelerated development with Turborepo + pnpm for optimized micro-frontends. Employed advanced react-dom hydration for optimized PDFs. Built a scalable Datagrid, elastic search, paginations, modals with Styled Components and Framer animations. Developed API request builders for React Query.",
 		},
 		{
-			title: "Software Engineer",
-			company: "Google",
+			title: "Frontend Developer (Intern)",
+			company: "Credence Analytics",
 			date: "2021 - Present",
-			description: "Working on the next big thing! some more text to make it multiline",
+			description:
+				"Enhanced page-load performance and maintainability with latest ES standards; refactored class-based React to functional components for better readability. Implemented React micro-frontends.",
 		},
 		{
-			title: "Software Engineer",
-			company: "Google",
+			title: "Frontend Developer (Intern)",
+			company: "Excellis IT",
 			date: "2021 - Present",
-			description: "Working on the next big thing!",
+			description:
+				"Crafted static, responsive, and scalable front-end for websites. Aided in HTML rendering optimization by minimizing jQuery reliance and accelerating development with SCSS.",
 		},
 	];
 
