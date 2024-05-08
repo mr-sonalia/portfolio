@@ -11,7 +11,7 @@ const Project = ({ uri, title, description }: ProjectProps) => {
 		<a href={redirectionURL}>
 			<div className="flex items-start flex-col md:flex-row justify-start w-full p-4 bg-gray-50 rounded-lg border-solid border border-gray-200">
 				<div
-					className="w-full h-48 md:max-w-[200px] md:h-24 bg-cover bg-center bg-no-repeat"
+					className="w-[200px] h-[96px] bg-cover bg-center bg-no-repeat mb-2 md:mb-0"
 					style={{
 						backgroundImage: `url(${ogImageURL})`,
 						backgroundSize: "contain",
@@ -31,24 +31,27 @@ const Projects = () => {
 
 	const projects = [
 		{
-			title: "Software Engineer",
-			description: "Working on the next big thing! some more text to make it multiline",
+			title: "AI CT Segmentation & Automation",
+			description:
+				"Generate segmentation masks for full-body CT and automate the generation process using Python scripts in a DICOM SCP.",
 			uri: "mr-sonalia/AI-CT-Segmentation",
 		},
 		{
-			title: "Software Engineer",
-			description: "Working on the next big thing some more text to make it multiline!",
-			uri: "mr-sonalia/AI-CT-Segmentation",
+			title: "Radio Buddy",
+			description:
+				"Generative AI Radiological assistant to streamline and enhance reporting, built using OpenAI's GPT-4 Builder technology.",
+			uri: "mr-sonalia/radio-buddy",
 		},
 		{
-			title: "Software Engineer",
-			description: "Working on the next big thing! some more text to make it multiline",
-			uri: "mr-sonalia/AI-CT-Segmentation",
+			title: "Job Listing Server",
+			description:
+				"Job listing application backend using Controller-Service pattern using MongoDB and express.js.",
+			uri: "mr-sonalia/job-listing",
 		},
 		{
-			title: "Software Engineer",
-			description: "Working on the next big thing!",
-			uri: "mr-sonalia/AI-CT-Segmentation",
+			title: "Galleria",
+			description: "A minimalistic gallery website built using Next.js and Firestore.",
+			uri: "mr-sonalia/galleria",
 		},
 	];
 
