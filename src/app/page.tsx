@@ -1,6 +1,8 @@
 import { Footer, Header, Introduction, Projects, Title, WorkExperience } from "@/sections";
 
 export default function Home() {
+	console.clear();
+	console.log("🐕🐕🐕");
 	return (
 		<main className="bg-white min-h-screen pt-0 md:pt-0 lg:pt-0 p-8 md:p-16 lg:p-20 max-w-screen-lg m-auto">
 			<Header />
