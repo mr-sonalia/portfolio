@@ -10,6 +10,8 @@ export default function Home() {
 				<div className="hidden absolute top-[80vh] right-[50%] translate-x-[-50%] xl:block">
 					<a href="#work-experience" aria-label="Scroll down to know more">
 						<svg
+							name="scroll-down"
+							aria-label="Scroll down to know more"
 							width="26"
 							height="41"
 							viewBox="0 0 69 41"
