@@ -1,19 +1,18 @@
 type ProjectProps = {
 	title: string;
 	description: string;
-	uri: string;
+	og: string;
+	redirection: string;
 };
 
-const Project = ({ uri, title, description }: ProjectProps) => {
-	const redirectionURL = `https://github.com/${uri}`;
-	const ogImageURL = `https://opengraph.githubassets.com/0101/${uri}`;
+const Project = ({ og, redirection, title, description }: ProjectProps) => {
 	return (
-		<a href={redirectionURL}>
+		<a href={redirection} aria-label={title}>
 			<div className="flex items-start flex-col md:flex-row justify-start w-full p-4 bg-gray-50 rounded-lg border-solid border border-gray-200">
 				<div
 					className="w-[200px] h-[96px] bg-cover bg-center bg-no-repeat mb-2 md:mb-0"
 					style={{
-						backgroundImage: `url(${ogImageURL})`,
+						backgroundImage: `url(${og})`,
 						backgroundSize: "contain",
 						backgroundPosition: "top center",
 					}}></div>
@@ -34,24 +33,28 @@ const Projects = () => {
 			title: "AI CT Segmentation & Automation",
 			description:
 				"Generate segmentation masks for full-body CT and automate the generation process using Python scripts in a DICOM SCP.",
-			uri: "mr-sonalia/AI-CT-Segmentation",
+			og: "https://opengraph.githubassets.com/0101/mr-sonalia/AI-CT-Segmentation",
+			redirection: "https://github.com/mr-sonalia/AI-CT-Segmentation",
 		},
 		{
 			title: "Radio Buddy",
 			description:
 				"Generative AI Radiological assistant to streamline and enhance reporting, built using OpenAI's GPT-4 Builder technology.",
-			uri: "mr-sonalia/radio-buddy",
+			og: "https://opengraph.githubassets.com/0101/mr-sonalia/radio-buddy",
+			redirection: "https://github.com/mr-sonalia/radio-buddy",
 		},
 		{
 			title: "Job Listing Server",
 			description:
 				"Job listing application backend using Controller-Service pattern using MongoDB and express.js.",
-			uri: "mr-sonalia/job-listing",
+			og: "https://opengraph.githubassets.com/0101/mr-sonalia/job-listing",
+			redirection: "https://github.com/mr-sonalia/job-listing",
 		},
 		{
 			title: "Galleria",
 			description: "A minimalistic gallery website built using Next.js and Firestore.",
-			uri: "mr-sonalia/galleria",
+			og: "https://opengraph.githubassets.com/0101/mr-sonalia/galleria",
+			redirection: "https://github.com/mr-sonalia/galleria",
 		},
 	];
 

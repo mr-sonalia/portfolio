@@ -7,8 +7,7 @@ const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], preload: true });
 
 export const metadata: Metadata = {
 	title: "Yash Sonalia, Full Stack SDE",
-	description:
-		"Namaste, I'm a full-stack software engineer with ~2 years of experience.",
+	description: "Namaste, I'm a full-stack software engineer with ~2 years of experience.",
 	authors: { name: "Yash Sonalia", url: "https://sonaliayash.in" },
 	applicationName: "Yash Sonalia's Portfolio",
 	category: "Portfolio",
@@ -36,11 +35,9 @@ export const metadata: Metadata = {
 		"GitHub",
 	],
 	robots: "index, follow",
-	themeColor: "#805ad5",
 	openGraph: {
 		title: "Yash Sonalia",
-		description:
-			"Namaste, I'm a full-stack software engineer with ~2 years of experience.",
+		description: "Namaste, I'm a full-stack software engineer with ~2 years of experience.",
 		images: [
 			{
 				url: "https://avatars.githubusercontent.com/u/53109900?v=4",

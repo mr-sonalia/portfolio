@@ -1,8 +1,6 @@
 import { Footer, Header, Introduction, Projects, Title, WorkExperience } from "@/sections";
 
 export default function Home() {
-	console.clear();
-	console.log("🐕🐕🐕");
 	return (
 		<main className="bg-white min-h-screen pt-0 md:pt-0 lg:pt-0 p-8 md:p-16 lg:p-20 max-w-screen-lg m-auto">
 			<Header />
@@ -10,7 +8,7 @@ export default function Home() {
 				<Title />
 				<Introduction />
 				<div className="hidden absolute top-[80vh] right-[50%] translate-x-[-50%] xl:block">
-					<a href="#work-experience">
+					<a href="#work-experience" aria-label="Scroll down to know more">
 						<svg
 							width="26"
 							height="41"
