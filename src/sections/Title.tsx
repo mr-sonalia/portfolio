@@ -3,7 +3,7 @@ const Title = () => {
 	const titlePart2 = "I'm Yash Sonalia";
 	return (
 		<section className="container w-full">
-			<h1 className="mt-[-15vh] md:mt-[-10vh] text-4xl font-bold text-gray-200 uppercase md:text-6xl lg:text-8xl text-left mb-4 md:mb-6 lg:md-8">
+			<h1 className="mt-[-15vh] md:mt-[-10vh] text-4xl font-bold text-gray-200 dark:text-gray-500 uppercase md:text-6xl lg:text-8xl text-left mb-4 md:mb-6 lg:md-8">
 				{titlePart1.split("").map((char, idx) => (
 					<span key={idx} className="hover:text-accent-500 ease-linear duration-50">
 						{char}
@@ -20,28 +20,28 @@ const Title = () => {
 				<div>
 					<a
 						href="https://docs.google.com/document/d/1tlF579BJ-1orBawwig7kHkgoyvqzgvFix_B0W1duP8Q/edit?usp=sharing"
-						className="text-sm text-gray-600 hover:text-accent-500 ease-linear duration-50 font-semibold"
+						className="text-sm text-gray-600 dark:text-gray-300 hover:text-accent-500 ease-linear duration-50 font-semibold"
 						aria-label="Resume">
 						Resume
 					</a>
 					<span className="text-sm text-accent-500 select-none"> • </span>
 					<a
 						href="https://www.linkedin.com/in/yash-sonalia"
-						className="text-sm text-gray-600 hover:text-accent-500 ease-linear duration-50 font-semibold"
+						className="text-sm text-gray-600 dark:text-gray-300 hover:text-accent-500 ease-linear duration-50 font-semibold"
 						aria-label="LinkedIn">
 						Linkedin
 					</a>
 					<span className="text-sm text-accent-500 select-none"> • </span>
 					<a
 						href="https://github.com/mr-sonalia"
-						className="text-sm text-gray-600 hover:text-accent-500 ease-linear duration-50 font-semibold"
+						className="text-sm text-gray-600 dark:text-gray-300 hover:text-accent-500 ease-linear duration-50 font-semibold"
 						aria-label="Github">
 						Github
 					</a>
 					<span className="text-sm text-accent-500 select-none"> • </span>
 					<a
 						href="https://www.instagram.com/sonaliayash/"
-						className="text-sm text-gray-600 hover:text-accent-500 ease-linear duration-50 font-semibold"
+						className="text-sm text-gray-600 dark:text-gray-300 hover:text-accent-500 ease-linear duration-50 font-semibold"
 						aria-label="Instagram">
 						Instagram
 					</a>

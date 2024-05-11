@@ -8,7 +8,7 @@ type ProjectProps = {
 const Project = ({ og, redirection, title, description }: ProjectProps) => {
 	return (
 		<a href={redirection} aria-label={title}>
-			<div className="flex items-start flex-col md:flex-row justify-start w-full p-4 bg-gray-50 rounded-lg border-solid border border-gray-200">
+			<div className="flex items-start flex-col md:flex-row justify-start w-full p-4 bg-gray-50 dark:bg-night-400 rounded-lg border-solid border border-gray-200 dark:border-accent-800">
 				<div
 					className="w-[200px] h-[96px] bg-cover bg-center bg-no-repeat mb-2 md:mb-0"
 					style={{
@@ -17,8 +17,12 @@ const Project = ({ og, redirection, title, description }: ProjectProps) => {
 						backgroundPosition: "top center",
 					}}></div>
 				<div className="flex flex-col mt-2 md:mt-0 md:ml-4">
-					<h2 className="text-lg md:text-xl font-semibold text-gray-700">{title}</h2>
-					<p className="text-sm max-w-lg mt-1 mb-3 text-gray-800">{description}</p>
+					<h2 className="text-lg md:text-xl font-semibold text-gray-700 dark:text-gray-400">
+						{title}
+					</h2>
+					<p className="text-sm max-w-lg mt-1 mb-3 text-gray-800 dark:text-gray-300">
+						{description}
+					</p>
 				</div>
 			</div>
 		</a>
@@ -61,14 +65,14 @@ const Projects = () => {
 	return (
 		<section className="mt-20 md:mt-40 container w-full pt-24" id="projects">
 			<div className="mb-10">
-				<h1 className="text-3xl font-bold text-gray-200 uppercase md:text-4xl lg:text-6xl text-left">
+				<h1 className="text-3xl font-bold text-gray-200 dark:text-gray-500 uppercase md:text-4xl lg:text-6xl text-left">
 					{title.split("").map((char, idx) => (
 						<span key={idx} className="hover:text-accent-500 ease-linear duration-50">
 							{char}
 						</span>
 					))}
 				</h1>
-				<p className="text-sm max-w-lg mb-3 text-gray-800 leading-6">
+				<p className="text-sm max-w-lg mb-3 text-gray-800 dark:text-gray-300 leading-6">
 					Some that I am proud of! 🔥
 				</p>
 			</div>

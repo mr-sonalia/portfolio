@@ -56,7 +56,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en-IN">
-			<body className={cn(spaceGrotesk.className, "bg-white")}>{children}</body>
+			<body className={cn(spaceGrotesk.className, "bg-white dark:bg-night-500")}>
+				{children}
+			</body>
 		</html>
 	);
 }
