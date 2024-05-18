@@ -1,5 +1,6 @@
 "use client";
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 // Tailwind theme switcher component
 const DarkModeIcon = () => (
@@ -24,12 +25,19 @@ const LightModeIcon = () => (
 
 export const ThemeSwitch = () => {
 	const { theme, setTheme } = useTheme();
-	const localStorageTheme = localStorage.getItem("theme");
+	const [mounted, setMounted] = useState(false);
 
 	const toggleTheme = () => {
 		setTheme(theme === "dark" ? "light" : "dark");
 	};
 
+	useEffect(() => {
+		setMounted(true);
+	}, []);
+
+	if (!mounted) return null;
+
+	const localStorageTheme = localStorage.getItem("theme");
 	// Check if the theme is set in the local storage, then render the icon based on the theme
 	return (
 		<button
