@@ -1,9 +1,18 @@
-import { Footer, Header, Introduction, Projects, Title, WorkExperience } from "@/sections";
+import {
+	Footer,
+	Header,
+	Introduction,
+	Projects,
+	ThemeSwitch,
+	Title,
+	WorkExperience,
+} from "@/sections";
 
 export default function Home() {
 	return (
 		<main className="bg-white dark:bg-night-500 min-h-screen pt-0 md:pt-0 lg:pt-0 p-8 md:p-16 lg:p-20 max-w-screen-lg m-auto">
 			<Header />
+			<ThemeSwitch />
 			<div className="section-content h-[100vh] flex justify-center items-center flex-col relative">
 				<Title />
 				<Introduction />

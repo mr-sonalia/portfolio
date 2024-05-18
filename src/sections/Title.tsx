@@ -52,4 +52,3 @@ const Title = () => {
 };
 
 export { Title };
-

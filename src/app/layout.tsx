@@ -1,5 +1,6 @@
 import { cn } from "@/utils/cn";
 import type { Metadata } from "next";
+import { ThemeProvider } from "next-themes";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
@@ -57,7 +58,7 @@ export default function RootLayout({
 	return (
 		<html lang="en-IN">
 			<body className={cn(spaceGrotesk.className, "bg-white dark:bg-night-500")}>
-				{children}
+				<ThemeProvider attribute="class">{children}</ThemeProvider>
 			</body>
 		</html>
 	);
