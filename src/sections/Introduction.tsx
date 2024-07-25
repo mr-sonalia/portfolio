@@ -6,7 +6,7 @@ const Introduction = () => {
 				<span className="-z-50 text-white bg-accent-500 px-1 cursor-pointer inline-block rotate-[-2deg] hover:rotate-0 ease-linear duration-100">
 					full-stack engineer
 				</span>{" "}
-				at a fast-paced startup, with ~2&nbsp;years of software engineering and leadership
+				at a fast-paced startup, with 2&nbsp;years of software engineering and leadership
 				experience in Next.js, Typescript, Node.js, Microservices, AWS, and more!🔥
 			</p>
 

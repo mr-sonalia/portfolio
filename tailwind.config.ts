@@ -29,6 +29,10 @@ const config: Config = {
 					400: "#1A1A1F",
 				},
 			},
+			// cursor: {
+			// 	default: "url('/cursors/link.cur'), auto",
+			// 	pointer: "url('/cursors/link.cur'), pointer",
+			// },
 		},
 	},
 	plugins: [],

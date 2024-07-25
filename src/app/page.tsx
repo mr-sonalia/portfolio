@@ -17,7 +17,10 @@ export default function Home() {
 				<Title />
 				<Introduction />
 				<div className="hidden absolute top-[80vh] right-[50%] translate-x-[-50%] xl:block">
-					<a href="#work-experience" aria-label="Scroll down to know more">
+					<a
+						href="#work-experience"
+						aria-label="Scroll down to know more"
+						className="outline-none">
 						<svg
 							name="scroll-down"
 							aria-label="Scroll down to know more"

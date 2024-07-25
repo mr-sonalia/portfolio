@@ -20,28 +20,28 @@ const Title = () => {
 				<div>
 					<a
 						href="https://docs.google.com/document/d/1tlF579BJ-1orBawwig7kHkgoyvqzgvFix_B0W1duP8Q/edit?usp=sharing"
-						className="text-sm text-gray-600 dark:text-gray-300 hover:text-accent-500 ease-linear duration-50 font-semibold"
+						className="text-sm text-gray-600 dark:text-gray-300 hover:text-accent-500 ease-linear duration-50 font-semibold focus-visible:outline-dashed focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-100"
 						aria-label="Resume">
 						Resume
 					</a>
 					<span className="text-sm text-accent-500 select-none"> • </span>
 					<a
 						href="https://www.linkedin.com/in/yash-sonalia"
-						className="text-sm text-gray-600 dark:text-gray-300 hover:text-accent-500 ease-linear duration-50 font-semibold"
+						className="text-sm text-gray-600 dark:text-gray-300 hover:text-accent-500 ease-linear duration-50 font-semibold focus-visible:outline-dashed focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-100"
 						aria-label="LinkedIn">
 						Linkedin
 					</a>
 					<span className="text-sm text-accent-500 select-none"> • </span>
 					<a
 						href="https://github.com/mr-sonalia"
-						className="text-sm text-gray-600 dark:text-gray-300 hover:text-accent-500 ease-linear duration-50 font-semibold"
+						className="text-sm text-gray-600 dark:text-gray-300 hover:text-accent-500 ease-linear duration-50 font-semibold focus-visible:outline-dashed focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-100"
 						aria-label="Github">
 						Github
 					</a>
 					<span className="text-sm text-accent-500 select-none"> • </span>
 					<a
 						href="https://www.instagram.com/sonaliayash/"
-						className="text-sm text-gray-600 dark:text-gray-300 hover:text-accent-500 ease-linear duration-50 font-semibold"
+						className="text-sm text-gray-600 dark:text-gray-300 hover:text-accent-500 ease-linear duration-50 font-semibold focus-visible:outline-dashed focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-100"
 						aria-label="Instagram">
 						Instagram
 					</a>

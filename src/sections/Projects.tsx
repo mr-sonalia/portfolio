@@ -7,7 +7,10 @@ type ProjectProps = {
 
 const Project = ({ og, redirection, title, description }: ProjectProps) => {
 	return (
-		<a href={redirection} aria-label={title}>
+		<a
+			href={redirection}
+			aria-label={title}
+			className="focus-visible:outline-dashed focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent-100">
 			<div className="flex items-start flex-col md:flex-row justify-start w-full p-4 bg-gray-50 dark:bg-night-400 rounded-lg border-solid border border-gray-200 dark:border-accent-800">
 				<div
 					className="w-[200px] h-[96px] bg-cover bg-center bg-no-repeat mb-2 md:mb-0"
