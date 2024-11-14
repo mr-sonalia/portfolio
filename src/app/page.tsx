@@ -7,48 +7,51 @@ import {
 	Title,
 	WorkExperience,
 } from "@/sections";
+import { Fragment } from "react";
 
 export default function Home() {
 	return (
-		<main className="bg-white dark:bg-night-500 min-h-screen pt-0 md:pt-0 lg:pt-0 p-8 md:p-16 lg:p-20 max-w-screen-lg m-auto">
+		<Fragment>
 			<Header />
-			<ThemeSwitch />
-			<div className="section-content h-[100vh] flex justify-center items-center flex-col relative">
-				<Title />
-				<Introduction />
-				<div className="hidden absolute top-[80vh] right-[50%] translate-x-[-50%] xl:block">
-					<a
-						href="#work-experience"
-						aria-label="Scroll down to know more"
-						className="outline-none">
-						<svg
-							name="scroll-down"
+			<main className=" min-h-screen pt-0 md:pt-0 lg:pt-0 p-8 md:p-16 lg:p-20 max-w-screen-lg m-auto">
+				<ThemeSwitch />
+				<div className="section-content h-[100vh] flex justify-center items-center flex-col relative">
+					<Title />
+					<Introduction />
+					<div className="hidden absolute top-[80vh] right-[50%] translate-x-[-50%] xl:block">
+						<a
+							href="#work-experience"
 							aria-label="Scroll down to know more"
-							width="26"
-							height="41"
-							viewBox="0 0 69 41"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								fillRule="evenodd"
-								clipRule="evenodd"
-								d="M68.8395 20.808L34.2535 40.7762L29.0237 37.7568L29.0154 37.7424L0 20.9904L7.5 8L34.4724 23.5725L61.4448 8.00006L68.8395 20.808Z"
-								fill="#805ad5"
-							/>
-							<path
-								fillRule="evenodd"
-								clipRule="evenodd"
-								d="M68.8395 12.8081L34.2535 32.7763L29.0237 29.7569L29.0154 29.7424L0 12.9904L7.5 0L34.4724 15.5725L61.4447 3.8147e-05L68.8395 12.8081Z"
-								fill="#5632A7"
-								fillOpacity="0.43"
-							/>
-						</svg>
-					</a>
+							className="outline-none">
+							<svg
+								name="scroll-down"
+								aria-label="Scroll down to know more"
+								width="26"
+								height="41"
+								viewBox="0 0 69 41"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									fillRule="evenodd"
+									clipRule="evenodd"
+									d="M68.8395 20.808L34.2535 40.7762L29.0237 37.7568L29.0154 37.7424L0 20.9904L7.5 8L34.4724 23.5725L61.4448 8.00006L68.8395 20.808Z"
+									fill="#805ad5"
+								/>
+								<path
+									fillRule="evenodd"
+									clipRule="evenodd"
+									d="M68.8395 12.8081L34.2535 32.7763L29.0237 29.7569L29.0154 29.7424L0 12.9904L7.5 0L34.4724 15.5725L61.4447 3.8147e-05L68.8395 12.8081Z"
+									fill="#5632A7"
+									fillOpacity="0.43"
+								/>
+							</svg>
+						</a>
+					</div>
 				</div>
-			</div>
-			<WorkExperience />
-			<Projects />
-			<Footer />
-		</main>
+				<WorkExperience />
+				<Projects />
+				<Footer />
+			</main>
+		</Fragment>
 	);
 }

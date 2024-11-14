@@ -29,6 +29,12 @@ const config: Config = {
 					400: "#1A1A1F",
 				},
 			},
+			backgroundImage: {
+				"background-grid": "url('/background-grid.png')",
+			},
+			scale: {
+				"110": "1.1",
+			},
 			// cursor: {
 			// 	default: "url('/cursors/link.cur'), auto",
 			// 	pointer: "url('/cursors/link.cur'), pointer",

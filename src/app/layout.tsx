@@ -57,7 +57,11 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en-IN">
-			<body className={cn(spaceGrotesk.className, "bg-white dark:bg-night-500")}>
+			<body
+				className={cn(
+					spaceGrotesk.className,
+					"relative bg-white dark:bg-night-500 bg-background-grid bg-no-repeat bg-fixed bg-cover bg-center",
+				)}>
 				<ThemeProvider attribute="class">{children}</ThemeProvider>
 			</body>
 		</html>

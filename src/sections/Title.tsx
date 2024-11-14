@@ -19,13 +19,15 @@ const Title = () => {
 			<div id="socials" className="mb-8 md:mb-14 lg:mb-20">
 				<div>
 					<a
-						href="https://docs.google.com/document/d/1tlF579BJ-1orBawwig7kHkgoyvqzgvFix_B0W1duP8Q/edit?usp=sharing"
+						target="_blank"
+						href="https://docs.google.com/document/d/1k-V510AUZM6Tck6Lth6J4_L1eAChqUqmt7tlpy7si6E/edit?usp=sharing"
 						className="text-sm text-gray-600 dark:text-gray-300 hover:text-accent-500 ease-linear duration-50 font-semibold focus-visible:outline-dashed focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-100"
 						aria-label="Resume">
 						Resume
 					</a>
 					<span className="text-sm text-accent-500 select-none"> • </span>
 					<a
+						target="_blank"
 						href="https://www.linkedin.com/in/yash-sonalia"
 						className="text-sm text-gray-600 dark:text-gray-300 hover:text-accent-500 ease-linear duration-50 font-semibold focus-visible:outline-dashed focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-100"
 						aria-label="LinkedIn">
@@ -33,6 +35,7 @@ const Title = () => {
 					</a>
 					<span className="text-sm text-accent-500 select-none"> • </span>
 					<a
+						target="_blank"
 						href="https://github.com/mr-sonalia"
 						className="text-sm text-gray-600 dark:text-gray-300 hover:text-accent-500 ease-linear duration-50 font-semibold focus-visible:outline-dashed focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-100"
 						aria-label="Github">
@@ -40,6 +43,7 @@ const Title = () => {
 					</a>
 					<span className="text-sm text-accent-500 select-none"> • </span>
 					<a
+						target="_blank"
 						href="https://www.instagram.com/sonaliayash/"
 						className="text-sm text-gray-600 dark:text-gray-300 hover:text-accent-500 ease-linear duration-50 font-semibold focus-visible:outline-dashed focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-100"
 						aria-label="Instagram">
@@ -52,3 +56,4 @@ const Title = () => {
 };
 
 export { Title };
+
