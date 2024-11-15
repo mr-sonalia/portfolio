@@ -32,15 +32,15 @@ const Title = () => {
 						href="https://www.linkedin.com/in/yash-sonalia"
 						className="text-sm text-gray-600 dark:text-gray-300 hover:text-accent-500 ease-linear duration-50 font-semibold focus-visible:outline-dashed focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-100"
 						aria-label="LinkedIn">
-						Linkedin
+						LinkedIn
 					</a>
 					<span className="text-sm text-accent-500 select-none"> • </span>
 					<a
 						target="_blank"
 						href="https://github.com/mr-sonalia"
 						className="text-sm text-gray-600 dark:text-gray-300 hover:text-accent-500 ease-linear duration-50 font-semibold focus-visible:outline-dashed focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-100"
-						aria-label="Github">
-						Github
+						aria-label="GitHub">
+						GitHub
 					</a>
 					<span className="text-sm text-accent-500 select-none"> • </span>
 					<a
