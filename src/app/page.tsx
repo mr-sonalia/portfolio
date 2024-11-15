@@ -18,7 +18,7 @@ export default function Home() {
 				<div className="section-content h-[100vh] flex justify-center items-center flex-col relative">
 					<Title />
 					<Introduction />
-					<div className="hidden absolute top-[80vh] right-[50%] translate-x-[-50%] xl:block">
+					<div className="hidden absolute top-[80vh] left-[50%] translate-x-[-50%] xl:block animate-bounce">
 						<a
 							href="#work-experience"
 							aria-label="Scroll down to know more"

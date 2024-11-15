@@ -1,6 +1,7 @@
 const Title = () => {
 	const titlePart1 = "Namaste,";
 	const titlePart2 = "I'm Yash Sonalia";
+
 	return (
 		<section className="container w-full">
 			<h1 className="mt-[-15vh] md:mt-[-10vh] text-4xl font-bold text-gray-200 dark:text-gray-500 uppercase md:text-6xl lg:text-8xl text-left mb-4 md:mb-6 lg:md-8">

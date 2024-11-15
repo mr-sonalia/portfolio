@@ -42,8 +42,8 @@ export const ThemeSwitch = () => {
 	return (
 		<button
 			aria-label="Toggle Dark Mode"
-			title={`Toggle ${theme} Mode`}
-			className="p-2 fixed bottom-10 right-10 rounded-full focus-visible:outline-dashed focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent-100  bg-white/50 dark:bg-night-500/50 backdrop-blur-md z-10"
+			title={`Toggle ${theme} mode`}
+			className="p-2 fixed bottom-10 right-10 rounded-full focus-visible:outline-dashed focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent-100  bg-white/50 dark:bg-night-500/50 backdrop-blur-md z-10 border-gray-200 dark:border-accent-800"
 			onClick={toggleTheme}>
 			{!theme ? (
 				localStorageTheme ? (

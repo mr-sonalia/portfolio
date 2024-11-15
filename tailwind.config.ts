@@ -10,6 +10,33 @@ const config: Config = {
 	],
 	theme: {
 		extend: {
+			keyframes: {
+				// Fade in and come down from the top
+				"fade-in-down": {
+					"0%": {
+						opacity: "0",
+						transform: "translateY(-100%)",
+					},
+					"100%": {
+						opacity: "1",
+						transform: "translateY(0)",
+					},
+				},
+				bounce: {
+					"0%, 100%": {
+						transform: "translateY(-25%) translateX(-50%)",
+						animationTimingFunction: "cubic-bezier(0.8, 0, 1, 1)",
+					},
+					"50%": {
+						transform: "translateY(0) translateX(-50%)",
+						animationTimingFunction: "cubic-bezier(0, 0, 0.2, 1)",
+					},
+				},
+			},
+			animation: {
+				"fade-in-down": "fade-in-down 0.6s cubic-bezier(0.25, 0.1, 0.25, 1)",
+				bounce: "bounce 1.6s infinite",
+			},
 			colors: {
 				accent: {
 					50: "#f0ebff",
