@@ -1,11 +1,11 @@
 const Header = () => {
 	return (
 		// <div className="container sticky top-0 bg-white/50 dark:bg-night-500/50 backdrop-blur-md z-10">
-		<div className="container sticky top-1 z-10 pt-0 md:pt-0 lg:pt-0 p-8 pb-0 md:p-8 md:pb-0 lg:p-10 lg:pb-0 max-w-screen-lg m-auto backdrop-blur-md rounded-sm border-solid border border-gray-200 dark:border-accent-800 shadow-sm animate-fade-in-down">
+		<div className="container sticky top-1 z-10 pt-0 md:pt-0 lg:pt-0 p-8 pb-0 md:p-8 md:pb-0 lg:p-10 lg:pb-0 m-auto backdrop-blur-md rounded-sm border-solid border border-gray-200 dark:border-accent-800 shadow-sm animate-fade-in-down max-w-max md:max-w-screen-lg">
 			<nav className="md:px-4 py-4 flex gap-8 md:gap-16 items-center justify-between">
 				<a
 					href="#"
-					className="focus-visible:outline-dashed focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent-100 focus-visible:rotate-180 duration-150">
+					className="focus-visible:outline-dashed focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent-100 focus-visible:rotate-180 duration-150 scale-75 md:scale-100">
 					<svg
 						className="hidden dark:inline-block"
 						width="40"
@@ -75,17 +75,17 @@ const Header = () => {
 				</a>
 				<div className="flex gap-4 md:gap-16 items-center">
 					<a
-						className=" text-gray-600 dark:text-gray-300 hover:text-accent-500 ease-linear duration-50 font-semibold focus-visible:outline-dashed focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent-100 "
+						className="text-sm md:text-[16px] text-gray-600 dark:text-gray-300 hover:text-accent-500 ease-linear duration-50 font-semibold focus-visible:outline-dashed focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent-100 "
 						href="#work-experience">
 						Work
 					</a>
 					<a
-						className=" text-gray-600 dark:text-gray-300 hover:text-accent-500 ease-linear duration-50 font-semibold focus-visible:outline-dashed focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent-100 "
+						className="text-sm md:text-[16px] text-gray-600 dark:text-gray-300 hover:text-accent-500 ease-linear duration-50 font-semibold focus-visible:outline-dashed focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent-100 "
 						href="#projects">
 						Projects
 					</a>
 					<a
-						className=" text-gray-600 dark:text-gray-300 hover:text-accent-500 ease-linear duration-50 font-semibold focus-visible:outline-dashed focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent-100 "
+						className="text-sm md:text-[16px] text-gray-600 dark:text-gray-300 hover:text-accent-500 ease-linear duration-50 font-semibold focus-visible:outline-dashed focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent-100 "
 						href="#contact">
 						Contact
 					</a>
