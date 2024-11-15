@@ -1,7 +1,7 @@
 const Header = () => {
 	return (
 		// <div className="container sticky top-0 bg-white/50 dark:bg-night-500/50 backdrop-blur-md z-10">
-		<div className="container sticky top-1 z-10 pt-0 md:pt-0 lg:pt-0 p-8 pb-0 md:p-8 md:pb-0 lg:p-10 lg:pb-0 max-w-screen-lg m-auto backdrop-blur-md rounded-lg border-solid border border-gray-200 dark:border-accent-800 shadow-sm animate-fade-in-down">
+		<div className="container sticky top-1 z-10 pt-0 md:pt-0 lg:pt-0 p-8 pb-0 md:p-8 md:pb-0 lg:p-10 lg:pb-0 max-w-screen-lg m-auto backdrop-blur-md rounded-sm border-solid border border-gray-200 dark:border-accent-800 shadow-sm animate-fade-in-down">
 			<nav className="md:px-4 py-4 flex gap-8 md:gap-16 items-center justify-between">
 				<a
 					href="#"

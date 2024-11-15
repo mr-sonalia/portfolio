@@ -7,7 +7,7 @@ type WorkCardProps = {
 
 const WorkCard = ({ title, company, date, description }: WorkCardProps) => {
 	return (
-		<div className="flex flex-col items-start justify-start w-full p-4 bg-gray-50 dark:bg-night-400 rounded-lg border-solid border border-gray-200 dark:border-accent-800 shadow-sm">
+		<div className="flex flex-col items-start justify-start w-full p-4 bg-gray-50 dark:bg-night-400 rounded-sm border-solid border border-gray-200 dark:border-accent-800 shadow-sm">
 			<h2 className="text-xl font-semibold text-gray-700 dark:text-gray-400">{title}</h2>
 			<h3 className="text-lg font-semibold text-accent-500">{company}</h3>
 			<p className="text-sm max-w-lg mt-1 mb-3 text-gray-800 dark:text-gray-300">
@@ -85,3 +85,4 @@ const WorkExperience = () => {
 };
 
 export { WorkExperience };
+
