@@ -11,7 +11,7 @@ const Project = ({ og, redirection, title, description }: ProjectProps) => {
 			href={redirection}
 			aria-label={title}
 			className="focus-visible:outline-dashed focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent-100 shadow-sm">
-			<div className="flex items-start flex-col md:flex-row justify-start w-full p-4 backdrop-blur-md dark:bg-night-400 rounded-sm border-solid border border-gray-200 dark:border-accent-800 ">
+			<div className="flex items-start flex-col md:flex-row justify-start w-full p-4 backdrop-blur-md dark:bg-night-400 rounded-sm border-solid border border-gray-200 dark:border-accent-800 hover:scale-[1.02] duration-150 ease-in-out">
 				<div
 					className="w-[200px] h-[96px] bg-cover bg-center bg-no-repeat mb-2 md:mb-0"
 					style={{

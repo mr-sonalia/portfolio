@@ -7,13 +7,13 @@ type WorkCardProps = {
 
 const WorkCard = ({ title, company, date, description }: WorkCardProps) => {
 	return (
-		<div className="flex flex-col items-start justify-start w-full p-6 backdrop-blur-md dark:bg-night-400 rounded-sm border-solid border border-gray-200 dark:border-accent-800 shadow-sm">
+		<div className="flex flex-col items-start justify-start w-full p-6 backdrop-blur-md dark:bg-night-400 rounded-sm border-solid border border-gray-200 dark:border-accent-800 shadow-sm hover:scale-[1.02] duration-150 ease-in-out">
 			<h2 className="text-2xl font-semibold text-gray-700 dark:text-gray-400">{title}</h2>
 			<h3 className="text-lg font-semibold text-accent-500">{company}</h3>
+			<p className="text-sm text-accent-500">{date}</p>
 			<p className="text-sm max-w-lg mt-1 mb-3 text-gray-800 dark:text-gray-300 pt-2">
 				{description}
 			</p>
-			<p className="text-sm text-accent-500">{date}</p>
 		</div>
 	);
 };
@@ -24,10 +24,18 @@ const WorkExperience = () => {
 
 	const workExperience = [
 		{
+			title: "Software Engineer (SWE)",
+			company: "MicroStrategy Inc.",
+
+			date: "Nov 2024 - Present",
+			description:
+				"Enhanced data fetching capabilities of analytics by reviewing the codebase and identifying issues in the AWS Lambda handler during an internal hackathon.",
+		},
+		{
 			title: "Full-stack SDE",
 			company: "Neos Healthtech Pvt. Ltd.",
 
-			date: "Nov 2022 - Present",
+			date: "Nov 2022 - Nov 2024",
 			description:
 				"Enhanced inter-service communication efficiency by 90% through REST to async queues migration, reduced development time with pnpm workspaces monorepo, optimized server load with Node microservices, and collaborated for AI integration.",
 		},
@@ -44,14 +52,7 @@ const WorkExperience = () => {
 			date: "Oct 2021 - Feb 2022",
 			description:
 				"Enhanced page-load performance and maintainability with latest ES standards; refactored class-based React to functional components for better readability. Implemented React micro-frontends.",
-		},
-		{
-			title: "Frontend Developer (Intern)",
-			company: "Excellis IT",
-			date: "Mar 2021 - May 2021",
-			description:
-				"Crafted static, responsive, and scalable front-end for websites. Aided in HTML rendering optimization by minimizing jQuery reliance and accelerating development with SCSS.",
-		},
+		}
 	];
 
 	return (
