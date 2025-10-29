@@ -77,7 +77,7 @@ const Title = () => {
 					<div className="grid grid-cols-1 sm:grid-cols-3 gap-2 md:gap-3 max-w-3xl">
 						{[
 							{
-								href: "https://docs.google.com/document/d/1k-V510AUZM6Tck6Lth6J4_L1eAChqUqmt7tlpy7si6E/edit?usp=sharing",
+								href: "https://docs.google.com/document/d/1MIelFdnQQho_2_WcLei22meWXWBv09wVleCV5dJmUz0/edit?usp=sharing",
 								label: "RESUME",
 								isExternal: true,
 							},
