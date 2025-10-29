@@ -10,25 +10,18 @@ type WorkExperience = {
 const WorkExperience = () => {
 	const workExperience: WorkExperience[] = [
 		{
-			title: "Software Engineer (SWE)",
-			company: "MicroStrategy Inc.",
+			title: "Cloud Software Engineer",
+			company: "Strategy (formerly MicroStrategy)",
 			date: "Nov 2024 - Present",
 			description:
-				"Enhanced data fetching capabilities of analytics by reviewing the codebase and identifying issues in the AWS Lambda handler during an internal hackathon.",
+				"Reduced data sync TAT by 120× (10 min → 5 sec) via cross-account AWS Lambda automation and event-driven architecture. Improved golden image build speed by 50% by parallelizing CI processes with AWS CodeBuild and Azure DevOps. 165% performance ratings in Q2 2025 for exceptional contributions in development automation and reliability engineering.",
 		},
 		{
-			title: "Full-stack SDE",
-			company: "Neos Healthtech Pvt. Ltd.",
-			date: "Nov 2022 - Nov 2024",
+			title: "Full-Stack Engineer",
+			company: "Neos HealthTech",
+			date: "Aug 2022 - Nov 2024",
 			description:
-				"Enhanced inter-service communication efficiency by 90% through REST to async queues migration, reduced development time with pnpm workspaces monorepo, optimized server load with Node microservices.",
-		},
-		{
-			title: "Frontend SDE",
-			company: "Neos Healthtech Pvt. Ltd.",
-			date: "Aug 2022 - Nov 2022",
-			description:
-				"Accelerated development with Turborepo + pnpm for optimized micro-frontends. Employed advanced react-dom hydration for optimized PDFs. Built scalable Datagrid, elastic search, paginations.",
+				"Automated GenAI data pipelines using AWS Lambda and EKS, cutting data processing time by 3×. Upgraded inter-service communication from REST to AMQP-based asynchronous messaging, improving reliability and throughput by 90%. Reduced ECR storage cost by 50% with multi-stage Docker builds. Delivered three complete release cycles with a team of 3 engineers.",
 		},
 		{
 			title: "Frontend Developer (Intern)",

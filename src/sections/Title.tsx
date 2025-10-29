@@ -65,17 +65,15 @@ const Title = () => {
 					{/* Full Introduction */}
 					<div className="max-w-4xl space-y-3 pl-3 md:pl-6 py-3 md:py-5 border-l-4 border-theme-accent rounded-r-lg bg-brutal-gray-50 dark:bg-brutal-gray-900/50">
 						<p className="text-sm md:text-base lg:text-lg font-bold leading-relaxed text-brutal-gray-900 dark:text-brutal-gray-100">
-							Cloud and full-stack engineer with <span className="font-black text-theme-accent">3+ years</span> of expertise in designing scalable cloud solutions, automating data pipelines, and optimizing infrastructure costs.
+							Software Engineer with <span className="font-black text-theme-accent">3+ years</span> of experience designing and scaling cloud-native systems. Proven impact in automation, reliability, and AI-driven workflows — <span className="font-black text-theme-accent">reducing deployment time, optimizing infrastructure cost, and improving data throughput by orders of magnitude</span>.
 						</p>
 						<p className="text-xs md:text-sm lg:text-base font-semibold leading-relaxed text-brutal-gray-700 dark:text-brutal-gray-300">
-							Proficient in AWS, Azure, Docker, Kubernetes, Terraform, and Python.
+							<span className="font-black text-theme-accent">Top Skills:</span> AWS • Python • Docker • TypeScript • PostgreSQL • Kubernetes • Terraform
 						</p>
 						<p className="text-xs md:text-sm lg:text-base font-semibold leading-relaxed text-brutal-gray-700 dark:text-brutal-gray-300">
-							Demonstrated success in reducing latency, improving system reliability, and driving cost-effective cloud architecture strategies.
+							Product POC and SME, adept at leading cross-functional initiatives and owning complex distributed systems in cloud, platform scalability, and automation practices.
 						</p>
-					</div>
-
-					{/* Social Links */}
+					</div>					{/* Social Links */}
 					<div className="grid grid-cols-1 sm:grid-cols-3 gap-2 md:gap-3 max-w-3xl">
 						{[
 							{
