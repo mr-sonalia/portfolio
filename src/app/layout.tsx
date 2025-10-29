@@ -4,49 +4,76 @@ import { ThemeProvider } from "next-themes";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
-const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], preload: true });
+const spaceGrotesk = Space_Grotesk({
+	subsets: ["latin"],
+	display: "swap",
+	variable: "--font-space-grotesk",
+});
 
 export const metadata: Metadata = {
-	title: "Yash Sonalia, Full Stack SDE",
-	description: "Namaste, I'm a full-stack software engineer with 2 years of experience.",
-	authors: { name: "Yash Sonalia", url: "https://sonaliayash.in" },
-	applicationName: "Yash Sonalia's Portfolio",
-	category: "Portfolio",
+	metadataBase: new URL("https://sonaliayash.in"),
+	title: {
+		default: "Yash Sonalia | Full Stack Software Engineer",
+		template: "%s | Yash Sonalia",
+	},
+	description:
+		"Full-stack software engineer with 2+ years of experience building scalable web applications using Next.js, TypeScript, Node.js, React, and AWS. Specialized in microservices and modern web development.",
 	keywords: [
 		"Yash Sonalia",
-		"Portfolio",
-		"Software Engineer",
 		"Full Stack Developer",
-		"Web Developer",
-		"Frontend Developer",
-		"Backend Developer",
-		"Tech Lead",
-		"SDE",
-		"React",
+		"Software Engineer",
+		"React Developer",
 		"Next.js",
-		"Tailwind CSS",
 		"TypeScript",
 		"Node.js",
-		"Express.js",
-		"MongoDB",
 		"AWS",
-		"Docker",
-		"Kubernetes",
-		"Git",
-		"GitHub",
+		"Microservices",
+		"Frontend Developer",
+		"Backend Developer",
+		"Web Development",
+		"MicroStrategy",
+		"Portfolio",
 	],
-	robots: "index, follow",
+	authors: [{ name: "Yash Sonalia", url: "https://sonaliayash.in" }],
+	creator: "Yash Sonalia",
+	publisher: "Yash Sonalia",
+	robots: {
+		index: true,
+		follow: true,
+		googleBot: {
+			index: true,
+			follow: true,
+			"max-video-preview": -1,
+			"max-image-preview": "large",
+			"max-snippet": -1,
+		},
+	},
 	openGraph: {
-		title: "Yash Sonalia",
-		description: "Namaste, I'm a full-stack software engineer with 2 years of experience.",
+		type: "website",
+		locale: "en_US",
+		url: "https://sonaliayash.in",
+		title: "Yash Sonalia | Full Stack Software Engineer",
+		description:
+			"Full-stack software engineer with 2+ years of experience building scalable web applications using Next.js, TypeScript, Node.js, and AWS.",
+		siteName: "Yash Sonalia Portfolio",
 		images: [
 			{
 				url: "https://avatars.githubusercontent.com/u/53109900?v=4",
 				width: 1200,
 				height: 630,
-				alt: "Yash Sonalia",
+				alt: "Yash Sonalia - Full Stack Software Engineer",
 			},
 		],
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "Yash Sonalia | Full Stack Software Engineer",
+		description:
+			"Full-stack software engineer with 2+ years of experience building scalable web applications.",
+		images: ["https://avatars.githubusercontent.com/u/53109900?v=4"],
+	},
+	alternates: {
+		canonical: "https://sonaliayash.in",
 	},
 };
 
@@ -56,14 +83,13 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en-IN" className="scroll-smooth">
-			<body
-				className={cn(
-					spaceGrotesk.className,
-					"relative bg-white dark:bg-night-500 bg-background-grid bg-no-repeat bg-fixed bg-cover bg-center",
-				)}>
-				<ThemeProvider attribute="class">{children}</ThemeProvider>
+		<html lang="en" className="scroll-smooth" suppressHydrationWarning>
+			<body className={cn(spaceGrotesk.className, "antialiased")}>
+				<ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+					{children}
+				</ThemeProvider>
 			</body>
 		</html>
 	);
 }
+

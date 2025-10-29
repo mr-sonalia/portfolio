@@ -10,62 +10,114 @@ const config: Config = {
 	],
 	theme: {
 		extend: {
+			// Brutalist spacing
+			spacing: {
+				18: "4.5rem",
+				88: "22rem",
+				128: "32rem",
+			},
+			// Bold brutalist typography
+			fontSize: {
+				"2xs": ["0.625rem", { lineHeight: "1", fontWeight: "700" }],
+				"3xl": ["1.875rem", { lineHeight: "1", fontWeight: "900" }],
+				"4xl": ["2.25rem", { lineHeight: "1", fontWeight: "900" }],
+				"5xl": ["3rem", { lineHeight: "0.95", fontWeight: "900" }],
+				"6xl": ["3.75rem", { lineHeight: "0.9", fontWeight: "900" }],
+				"7xl": ["4.5rem", { lineHeight: "0.9", fontWeight: "900" }],
+				"8xl": ["6rem", { lineHeight: "0.85", fontWeight: "900" }],
+			},
+			// Harsh brutalist animations - minimal, intentional
 			keyframes: {
-				// Fade in and come down from the top
-				"fade-in-down": {
-					"0%": {
-						opacity: "0",
-						transform: "translateY(-100%)",
-					},
-					"100%": {
-						opacity: "1",
-						transform: "translateY(0)",
-					},
+				"brutal-in": {
+					"0%": { opacity: "0" },
+					"100%": { opacity: "1" },
 				},
-				bounce: {
-					"0%, 100%": {
-						transform: "translateY(-25%) translateX(-50%)",
-						animationTimingFunction: "cubic-bezier(0.8, 0, 1, 1)",
-					},
-					"50%": {
-						transform: "translateY(0) translateX(-50%)",
-						animationTimingFunction: "cubic-bezier(0, 0, 0.2, 1)",
-					},
+				"slide-brutal": {
+					"0%": { transform: "translateX(-8px)" },
+					"100%": { transform: "translateX(0)" },
 				},
 			},
 			animation: {
-				"fade-in-down": "fade-in-down 0.6s cubic-bezier(0.25, 0.1, 0.25, 1)",
-				bounce: "bounce 1.6s infinite",
+				"brutal-in": "brutal-in 0.2s ease-out",
+				"slide-brutal": "slide-brutal 0.15s ease-out",
 			},
+			// Professional brutalist colors with neo-brutalism vibrancy
 			colors: {
-				accent: {
-					50: "#f0ebff",
-					100: "#d6c1ff",
-					200: "#bfa0ff",
-					300: "#a97fff",
-					400: "#9260ff",
-					500: "#805ad5", // primary
-					600: "#6c4eaa",
-					700: "#573f7f",
-					800: "#432f54",
-					900: "#2f2030",
+				brutal: {
+					white: "#FFFFFF",
+					black: "#0F0F0F",
+					accent: {
+						DEFAULT: "#FF6B35", // Neo-brutalism orange
+						hover: "#FF5722",
+						light: "#FF8A65",
+					},
+					secondary: {
+						DEFAULT: "#004E89", // Neo-brutalism deep blue
+						hover: "#003D6B",
+					},
+					tertiary: {
+						DEFAULT: "#FFD23F", // Neo-brutalism yellow
+						hover: "#FFC107",
+					},
+					success: {
+						DEFAULT: "#06FFA5", // Neo-brutalism mint
+						hover: "#00E676",
+					},
+					warning: {
+						DEFAULT: "#FF006E", // Neo-brutalism magenta
+						hover: "#D81B60",
+					},
+					gray: {
+						50: "#FAFAFA",
+						100: "#F5F5F5",
+						200: "#EEEEEE",
+						300: "#E0E0E0",
+						400: "#BDBDBD",
+						500: "#9E9E9E",
+						600: "#757575",
+						700: "#616161",
+						800: "#424242",
+						900: "#212121",
+					},
 				},
-				// #0F0F12 for night mode
-				night: {
-					500: "#0F0F12",
-					400: "#1A1A1F",
-				},
 			},
-			backgroundImage: {
-				"background-grid": "url('/background-grid.png')",
+			// Neo-brutalist shadows with color
+			boxShadow: {
+				brutal: "6px 6px 0 0 rgba(0, 0, 0, 0.8)",
+				"brutal-sm": "3px 3px 0 0 rgba(0, 0, 0, 0.8)",
+				"brutal-lg": "10px 10px 0 0 rgba(0, 0, 0, 0.8)",
+				"brutal-hover": "8px 8px 0 0 var(--color-accent)",
+				"neo-brutal": "8px 8px 0 0 rgba(0, 0, 0, 0.8)",
+				"neo-brutal-accent": "8px 8px 0 0 var(--color-accent)",
+				"neo-brutal-secondary": "8px 8px 0 0 var(--color-secondary)",
+				"neo-brutal-yellow": "8px 8px 0 0 #FFD23F",
+				"brutal-dark": "6px 6px 0 0 rgba(255, 255, 255, 0.1)",
+				"brutal-dark-sm": "3px 3px 0 0 rgba(255, 255, 255, 0.1)",
+				"brutal-dark-lg": "10px 10px 0 0 rgba(255, 255, 255, 0.1)",
+				none: "none",
 			},
-			scale: {
-				"110": "1.1",
+			// Neo-brutalism rounded corners
+			borderRadius: {
+				none: "0",
+				sm: "0.25rem",
+				DEFAULT: "0.5rem",
+				md: "0.75rem",
+				lg: "1rem",
+				xl: "1.5rem",
+				"2xl": "2rem",
 			},
-			// cursor: {
-			// 	default: "url('/cursors/link.cur'), auto",
-			// 	pointer: "url('/cursors/link.cur'), pointer",
-			// },
+			// Smooth transitions for neo-brutalism
+			transitionDuration: {
+				DEFAULT: "200ms",
+				fast: "100ms",
+			},
+			// Professional border widths
+			borderWidth: {
+				DEFAULT: "1px",
+				2: "2px",
+				3: "3px",
+				4: "4px",
+			},
 		},
 	},
 	plugins: [],

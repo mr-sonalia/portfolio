@@ -2,33 +2,227 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-	--foreground-rgb: 0, 0, 0;
-	--background-start-rgb: 214, 219, 220;
-	--background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
 	:root {
-		--foreground-rgb: 255, 255, 255;
-		--background-start-rgb: 0, 0, 0;
-		--background-end-rgb: 0, 0, 0;
+		/* Professional light mode */
+		--background: 250 250 250;
+		--foreground: 10 10 10;
+		--border: 212 212 212;
+		--accent: 37 99 235;
+		
+		/* Dynamic theme colors - default purple/pink (Cyber theme) */
+		--color-accent: #A855F7;
+		--color-accent-hover: #9333EA;
+		--color-secondary: #EC4899;
+		--color-secondary-hover: #DB2777;
 	}
-}
 
-body {
-	color: rgb(var(--foreground-rgb));
-	background: #ffffff;
-}
+	.dark {
+		/* Readable dark mode */
+		--background: 23 23 23;
+		--foreground: 245 245 245;
+		--border: 64 64 64;
+		--accent: 59 130 246;
+	}
 
-body ::selection {
-	background-color: #815ad5a0;
-	color: #ffffff;
-	background-blend-mode: difference;
+	html {
+		scroll-behavior: smooth;
+	}
+
+	body {
+		background-color: rgb(var(--background));
+		color: rgb(var(--foreground));
+		font-weight: 600;
+		transition: background-color 0.2s ease, color 0.2s ease;
+	}
+
+	/* Professional selection */
+	::selection {
+		background-color: rgba(var(--accent), 0.2);
+		color: rgb(var(--foreground));
+	}
+
+	/* Focus states */
+	*:focus-visible {
+		outline: 2px solid rgb(var(--accent));
+		outline-offset: 2px;
+	}
+
+	/* Remove default margins */
+	h1, h2, h3, h4, h5, h6, p {
+		margin: 0;
+	}
 }
 
 @layer utilities {
 	.text-balance {
 		text-wrap: balance;
 	}
+
+	/* Professional borders */
+	.border-brutal {
+		border: 2px solid rgb(var(--border));
+	}
+
+	.border-brutal-thick {
+		border: 3px solid rgb(var(--border));
+	}
+
+	/* Smooth transitions for professional feel */
+	.transition-brutal {
+		transition: all 0.2s ease;
+	}
+	
+	/* Dark mode shadows - lighter shadows for visibility */
+	.dark .shadow-brutal {
+		box-shadow: 6px 6px 0 0 rgba(255, 255, 255, 0.15);
+	}
+	
+	.dark .shadow-brutal-sm {
+		box-shadow: 3px 3px 0 0 rgba(255, 255, 255, 0.15);
+	}
+	
+	.dark .shadow-brutal-lg {
+		box-shadow: 10px 10px 0 0 rgba(255, 255, 255, 0.15);
+	}
+	
+	.dark .shadow-neo-brutal {
+		box-shadow: 8px 8px 0 0 rgba(255, 255, 255, 0.15);
+	}
+
+	/* Neo-brutalism gradients */
+	.gradient-neo-brutal {
+		background: linear-gradient(135deg, #2563EB 0%, #7C3AED 100%);
+	}
+	
+	.gradient-neo-pink {
+		background: linear-gradient(135deg, #EC4899 0%, #F59E0B 100%);
+	}
+	
+	.gradient-neo-success {
+		background: linear-gradient(135deg, #10B981 0%, #3B82F6 100%);
+	}
+
+	/* Abstract shapes */
+	.shape-circle {
+		border-radius: 50%;
+	}
+
+	.shape-square {
+		aspect-ratio: 1;
+	}
+	
+	/* Dynamic theme color classes */
+	.bg-theme-accent {
+		background-color: var(--color-accent) !important;
+	}
+	
+	.text-theme-accent {
+		color: var(--color-accent) !important;
+	}
+	
+	.border-theme-accent {
+		border-color: var(--color-accent) !important;
+	}
+	
+	.bg-theme-secondary {
+		background-color: var(--color-secondary) !important;
+	}
+	
+	.hover\:bg-theme-accent:hover {
+		background-color: var(--color-accent-hover) !important;
+	}
+	
+	/* Dynamic theme shadows */
+	.hover\:shadow-neo-brutal-accent:hover {
+		box-shadow: 8px 8px 0 0 var(--color-accent) !important;
+	}
+	
+	.hover\:shadow-neo-brutal-secondary:hover {
+		box-shadow: 8px 8px 0 0 var(--color-secondary) !important;
+	}
+	
+	.shadow-theme-accent {
+		box-shadow: 8px 8px 0 0 var(--color-accent) !important;
+	}
+	
+	.shadow-theme-secondary {
+		box-shadow: 8px 8px 0 0 var(--color-secondary) !important;
+	}
+}
+
+/* Professional animations */
+@keyframes float {
+	0%, 100% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-20px);
+	}
+}
+
+@keyframes slide-in {
+	0% {
+		opacity: 0;
+		transform: translateX(-20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.animate-float {
+	animation: float 6s ease-in-out infinite;
+}
+
+.animate-slide-in {
+	animation: slide-in 0.5s ease-out;
+}
+
+.animate-fade-in {
+	animation: fade-in 0.5s ease-out;
+}
+
+/* Real dither effect - halftone dot pattern */
+.dither-hover {
+	position: relative;
+	overflow: hidden;
+}
+
+.dither-hover::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	pointer-events: none;
+	z-index: 1;
+	background-image: 
+		radial-gradient(circle, rgba(0, 0, 0, 0.6) 1px, transparent 1px);
+	background-size: 3px 3px;
+	background-position: 0 0, 1.5px 1.5px;
+}
+
+.dark .dither-hover::before {
+	background-image: 
+		radial-gradient(circle, rgba(255, 255, 255, 0.5) 1px, transparent 1px);
+	background-size: 3px 3px;
+	background-position: 0 0, 1.5px 1.5px;
+}
+
+.dither-hover:hover::before {
+	opacity: 1;
 }
